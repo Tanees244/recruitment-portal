@@ -31,7 +31,7 @@ export function ReportsSection() {
             onClick={() => setSelectedReport(report.id)}
             className={`px-4 py-2 rounded-lg font-medium whitespace-nowrap transition-all ${
               selectedReport === report.id
-                ? "bg-yellow-400 text-slate-900"
+                ? "bg-[#06C144] text-white"
                 : "bg-slate-100 text-slate-600 hover:bg-slate-200"
             }`}
           >
@@ -45,7 +45,7 @@ export function ReportsSection() {
         <h2 className="text-xl font-bold text-slate-900 mb-6">{reports.find((r) => r.id === selectedReport)?.label}</h2>
 
         {/* Sample Chart */}
-        <div className="h-64 bg-gradient-to-br from-yellow-50 to-slate-50 rounded-lg flex items-center justify-center">
+        <div className="h-64 bg-gradient-to-br from-[#174460]/5 to-[#06C144]/5 rounded-lg flex items-center justify-center">
           <div className="text-center">
             <p className="text-slate-600 font-semibold">Chart Visualization</p>
             <p className="text-sm text-slate-500 mt-2">Data will be displayed here</p>

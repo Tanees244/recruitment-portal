@@ -13,7 +13,10 @@ export default function ProfilePage() {
 
         <div className="bg-white rounded-2xl p-6 shadow-sm">
           <div className="flex items-start gap-6">
-            <div className="w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center text-4xl font-bold text-slate-900">
+            <div
+            className="w-24 h-24 rounded-full flex items-center justify-center text-4xl font-bold text-white"
+            style={{ background: "linear-gradient(135deg, #174460 0%, #06C144 100%)" }}
+          >
               {user?.name.charAt(0).toUpperCase()}
             </div>
             <div className="flex-1">

@@ -31,7 +31,7 @@ export function DataTable({ columns, data }: DataTableProps) {
                     {col.key === "status" ? (
                       <span
                         className={`px-3 py-1 rounded-full text-sm font-semibold ${
-                          row[col.key] === "Approved" ? "bg-green-100 text-green-700" : "bg-yellow-100 text-yellow-700"
+                          row[col.key] === "Approved" ? "bg-[#06C144]/15 text-[#06C144]" : "bg-amber-100 text-amber-700"
                         }`}
                       >
                         {row[col.key]}
@@ -42,7 +42,7 @@ export function DataTable({ columns, data }: DataTableProps) {
                   </td>
                 ))}
                 <td className="py-4 px-6">
-                  <button className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">View</button>
+                  <button className="text-[#06C144] hover:text-[#05a83a] font-semibold text-sm">View</button>
                 </td>
               </tr>
             ))}

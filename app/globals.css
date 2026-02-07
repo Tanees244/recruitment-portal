@@ -5,38 +5,38 @@
 
 :root {
   --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --foreground: #174460;
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: #174460;
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
+  --popover-foreground: #174460;
+  --primary: #06C144;
+  --primary-foreground: oklch(1 0 0);
   --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
+  --secondary-foreground: #174460;
   --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
+  --muted-foreground: oklch(0.45 0.02 220);
   --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --accent-foreground: #174460;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
+  --ring: #06C144;
+  --chart-1: #06C144;
+  --chart-2: #174460;
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
   --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar: #174460;
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: #06C144;
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: rgba(6, 193, 68, 0.15);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: rgba(255, 255, 255, 0.1);
+  --sidebar-ring: #06C144;
 }
 
 .dark {
@@ -75,18 +75,19 @@
 }
 
 @theme inline {
-  /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
-  --font-sans: "Inter", "Open Sans", system-ui, sans-serif;
-  --color-primary: #fdd663;
-  --color-primary-dark: #e2b944;
-  --color-accent: #1e293b;
+  --font-sans: "Poppins", system-ui, sans-serif;
+  --color-brand-navy: #174460;
+  --color-brand-green: #06C144;
+  --color-primary: #06C144;
+  --color-primary-dark: #05a83a;
+  --color-accent: #174460;
   --color-background: #ffffff;
   --color-light-gray: #f5f5f5;
   --color-border: #e5e7eb;
-  --color-success: #10b981;
+  --color-success: #06C144;
   --color-warning: #f59e0b;
   --color-error: #ef4444;
-  --color-info: #3b82f6;
+  --color-info: #174460;
   --radius: 0.5rem;
 
   --color-background: var(--background);
@@ -141,17 +142,43 @@
 }
 
 body {
-  @apply bg-white text-slate-900;
+  @apply bg-white text-[#174460];
 }
 
+/* Brand gradient - navy to green */
+.bg-brand-gradient {
+  background: linear-gradient(135deg, #174460 0%, #1e5a7a 50%, #06C144 100%);
+}
+.bg-brand-gradient-subtle {
+  background: linear-gradient(180deg, rgba(23, 68, 96, 0.06) 0%, rgba(6, 193, 68, 0.08) 100%);
+}
+.text-brand-green { color: #06C144; }
+.text-brand-navy { color: #174460; }
+.bg-brand-navy { background-color: #174460; }
+.bg-brand-green { background-color: #06C144; }
+
 .btn-primary {
-  @apply bg-yellow-400 hover:bg-yellow-500 text-slate-900 font-semibold px-4 py-2 rounded-lg transition-all;
+  @apply font-semibold px-4 py-2 rounded-lg transition-all;
+  background: linear-gradient(135deg, #06C144 0%, #05a83a 100%);
+  color: white;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #05a83a 0%, #048530 100%);
+  color: white;
 }
 
 .btn-secondary {
-  @apply bg-slate-100 hover:bg-slate-200 text-slate-900 font-semibold px-4 py-2 rounded-lg transition-all;
+  @apply font-semibold px-4 py-2 rounded-lg transition-all border-2;
+  background: white;
+  color: #174460;
+  border-color: #174460;
+}
+.btn-secondary:hover {
+  background: rgba(23, 68, 96, 0.06);
+  color: #174460;
 }
 
 .sidebar-active {
-  @apply border-l-4 border-yellow-400 bg-yellow-50;
+  border-left: 4px solid #06C144;
+  background: rgba(6, 193, 68, 0.1);
 }

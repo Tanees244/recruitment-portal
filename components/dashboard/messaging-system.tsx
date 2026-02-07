@@ -49,7 +49,7 @@ export function MessagingSystem() {
                 onClick={() => setSelectedFolder(folder.toLowerCase())}
                 className={`w-full text-left px-4 py-2 rounded-lg transition-all ${
                   selectedFolder === folder.toLowerCase()
-                    ? "bg-yellow-100 text-yellow-700 font-semibold"
+                    ? "bg-[#06C144]/15 text-[#174460] font-semibold"
                     : "text-slate-600 hover:bg-slate-50"
                 }`}
               >
@@ -71,7 +71,7 @@ export function MessagingSystem() {
                 key={msg.id}
                 onClick={() => setSelectedMessage(idx)}
                 className={`p-4 border-b border-slate-100 cursor-pointer transition-all ${
-                  selectedMessage === idx ? "bg-yellow-50" : "hover:bg-slate-50"
+                  selectedMessage === idx ? "bg-[#06C144]/10" : "hover:bg-[#174460]/5"
                 }`}
               >
                 <div className="flex items-start justify-between">

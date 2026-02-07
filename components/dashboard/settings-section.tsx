@@ -24,7 +24,7 @@ export function SettingsSection() {
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
             className={`px-4 py-2 rounded-lg font-medium whitespace-nowrap transition-all ${
-              activeTab === tab.id ? "bg-yellow-400 text-slate-900" : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+              activeTab === tab.id ? "bg-[#06C144] text-white" : "bg-[#174460]/10 text-[#174460]/80 hover:bg-[#174460]/15"
             }`}
           >
             {tab.label}
@@ -102,7 +102,7 @@ export function SettingsSection() {
                   className="flex items-center justify-between border border-slate-200 rounded-lg p-4"
                 >
                   <span className="font-medium text-slate-900">{template}</span>
-                  <button className="text-yellow-600 hover:text-yellow-700 font-semibold">Edit</button>
+                  <button className="text-[#06C144] hover:text-[#05a83a] font-semibold">Edit</button>
                 </div>
               ))}
             </div>
@@ -128,7 +128,7 @@ export function SettingsSection() {
                   <div className="flex items-center gap-2">
                     <span
                       className={`px-3 py-1 rounded-full text-sm font-semibold ${
-                        recruiter.status === "Pending" ? "bg-yellow-100 text-yellow-700" : "bg-green-100 text-green-700"
+                        recruiter.status === "Pending" ? "bg-amber-100 text-amber-700" : "bg-[#06C144]/15 text-[#06C144]"
                       }`}
                     >
                       {recruiter.status}

@@ -27,7 +27,7 @@ export default function SettingsPage() {
             </div>
             <div>
               <label className="block text-sm font-medium text-slate-600 mb-2">Language</label>
-              <select className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+              <select className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06C144]">
                 <option>English</option>
                 <option>Arabic</option>
               </select>
@@ -45,7 +45,7 @@ export default function SettingsPage() {
                 <input
                   type="text"
                   defaultValue="Healthcare Recruitment Portal"
-                  className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                  className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06C144]"
                 />
               </div>
               <div>

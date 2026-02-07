@@ -30,7 +30,7 @@ export default function UsersPage() {
             <input
               type="text"
               placeholder="Search users..."
-              className="px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06C144]"
             />
           </div>
 

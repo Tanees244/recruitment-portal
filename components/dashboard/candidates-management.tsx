@@ -42,9 +42,9 @@ export function CandidatesManagement() {
         <input
           type="text"
           placeholder="Search candidates..."
-          className="px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          className="px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06C144]"
         />
-        <select className="px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+        <select className="px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06C144]">
           <option>All Status</option>
           <option>Applied</option>
           <option>Screened</option>

@@ -14,11 +14,11 @@ export default function Auth() {
     <main className="min-h-screen bg-white">
       <Header />
       <div className="max-w-md mx-auto px-4 py-16">
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h1 className="text-3xl font-bold text-slate-900 mb-2 text-center">
+        <div className="bg-white rounded-2xl shadow-lg shadow-[#174460]/10 border border-[#174460]/10 p-8">
+          <h1 className="text-3xl font-bold text-[#174460] mb-2 text-center">
             {isLogin ? "Welcome Back" : "Create Account"}
           </h1>
-          <p className="text-center text-slate-600 mb-8">
+          <p className="text-center text-[#174460]/80 mb-8">
             {isLogin ? "Sign in to your account" : "Join our healthcare recruitment platform"}
           </p>
 
@@ -29,7 +29,9 @@ export default function Auth() {
                 key={type}
                 onClick={() => setUserType(type)}
                 className={`flex-1 py-2 px-3 rounded-lg font-semibold transition-all ${
-                  userType === type ? "bg-yellow-400 text-slate-900" : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                  userType === type
+                    ? "bg-[#06C144] text-white shadow-md"
+                    : "bg-[#174460]/10 text-[#174460]/80 hover:bg-[#174460]/15"
                 }`}
               >
                 {type.charAt(0).toUpperCase() + type.slice(1)}
@@ -42,11 +44,11 @@ export default function Auth() {
 
           {/* Toggle Form */}
           <div className="text-center mt-6">
-            <p className="text-slate-600">
+            <p className="text-[#174460]/80">
               {isLogin ? "Don't have an account? " : "Already have an account? "}
               <button
                 onClick={() => setIsLogin(!isLogin)}
-                className="text-yellow-600 font-semibold hover:text-yellow-700"
+                className="text-[#06C144] font-semibold hover:text-[#05a83a]"
               >
                 {isLogin ? "Sign up" : "Sign in"}
               </button>

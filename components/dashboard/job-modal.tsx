@@ -43,7 +43,7 @@ export function JobModal({ onClose }: JobModalProps) {
               value={formData.title}
               onChange={handleChange}
               placeholder="e.g., Senior Nurse"
-              className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06C144] focus:border-[#06C144]"
               required
             />
           </div>
@@ -56,7 +56,7 @@ export function JobModal({ onClose }: JobModalProps) {
               onChange={handleChange}
               placeholder="Job description..."
               rows={4}
-              className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06C144] focus:border-[#06C144]"
               required
             />
           </div>
@@ -70,7 +70,7 @@ export function JobModal({ onClose }: JobModalProps) {
                 value={formData.location}
                 onChange={handleChange}
                 placeholder="City, State"
-                className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06C144] focus:border-[#06C144]"
               />
             </div>
             <div>
@@ -81,7 +81,7 @@ export function JobModal({ onClose }: JobModalProps) {
                 value={formData.salary}
                 onChange={handleChange}
                 placeholder="$50k - $70k"
-                className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06C144] focus:border-[#06C144]"
               />
             </div>
           </div>
@@ -94,7 +94,7 @@ export function JobModal({ onClose }: JobModalProps) {
               value={formData.tags}
               onChange={handleChange}
               placeholder="e.g., ICU, Emergency, Leadership"
-              className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06C144] focus:border-[#06C144]"
             />
           </div>
 

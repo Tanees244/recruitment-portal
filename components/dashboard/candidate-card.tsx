@@ -16,7 +16,7 @@ export function CandidateCard({ name, title, score, tags, status }: CandidateCar
           <p className="text-slate-600 text-sm">{title}</p>
         </div>
         <div className="text-right">
-          <div className="text-2xl font-bold text-yellow-400">{score}%</div>
+          <div className="text-2xl font-bold text-[#06C144]">{score}%</div>
           <p className="text-xs text-slate-600">Match Score</p>
         </div>
       </div>
@@ -34,7 +34,7 @@ export function CandidateCard({ name, title, score, tags, status }: CandidateCar
 
       <div className="flex items-center justify-between pt-4 border-t border-slate-200">
         <span className="text-sm font-semibold text-slate-600">{status}</span>
-        <button className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">View Profile →</button>
+        <button className="text-[#06C144] hover:text-[#05a83a] font-semibold text-sm">View Profile →</button>
       </div>
     </div>
   )

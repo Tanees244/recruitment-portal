@@ -53,7 +53,7 @@ export function InterviewsManagement() {
           {Array.from({ length: 35 }).map((_, idx) => (
             <div
               key={idx}
-              className="aspect-square flex items-center justify-center rounded-lg hover:bg-yellow-50 cursor-pointer"
+              className="aspect-square flex items-center justify-center rounded-lg hover:bg-[#06C144]/10 cursor-pointer"
             >
               {idx + 1}
             </div>

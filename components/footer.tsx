@@ -9,7 +9,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="font-bold text-lg mb-4">HealthCare Recruitment</h3>
+            <h3 className="font-bold text-lg mb-4">HopeFront Health Hire</h3>
             <p className="text-white/70">Connecting healthcare professionals with opportunities</p>
           </div>
           <div>
@@ -74,7 +74,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white/70">&copy; 2025 HealthCare Recruitment. All rights reserved.</p>
+          <p className="text-white/70">&copy; 2025 HopeFront Health Hire. All rights reserved.</p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <a href="#" className="text-white/70 hover:text-[#06C144] transition-colors">
               LinkedIn

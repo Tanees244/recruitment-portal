@@ -16,7 +16,7 @@ export function Header() {
           >
             HR
           </div>
-          <span className="font-bold text-xl text-[#174460] hidden sm:inline">HealthCare Recruitment</span>
+          <span className="font-bold text-xl text-[#174460] hidden sm:inline">HopeFront Health Hire</span>
         </Link>
 
         {/* Desktop Navigation */}

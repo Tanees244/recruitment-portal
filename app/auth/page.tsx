@@ -19,7 +19,7 @@ export default function Auth() {
             {isLogin ? "Welcome Back" : "Create Account"}
           </h1>
           <p className="text-center text-[#174460]/80 mb-8">
-            {isLogin ? "Sign in to your account" : "Join our healthcare recruitment platform"}
+            {isLogin ? "Sign in to your account" : "Join our HopeFront Health Hire platform"}
           </p>
 
           {/* User Type Selection */}

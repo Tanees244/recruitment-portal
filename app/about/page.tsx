@@ -11,7 +11,7 @@ export default function About() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-[#174460] mb-4">Our Mission</h2>
           <p className="text-lg text-slate-600 leading-relaxed">
-            We are dedicated to revolutionizing healthcare recruitment by connecting talented professionals with
+            We are dedicated to revolutionizing HopeFront Health Hire by connecting talented professionals with
             meaningful opportunities. Our platform bridges the gap between healthcare institutions and qualified
             candidates, ensuring the best matches for both parties.
           </p>
@@ -57,7 +57,7 @@ export default function About() {
           <h2 className="text-2xl font-bold text-[#174460] mb-4">Our Team</h2>
           <p className="text-lg text-slate-600 leading-relaxed">
             Our team consists of experienced healthcare professionals, software engineers, and recruitment specialists
-            dedicated to creating the best platform for healthcare recruitment.
+            dedicated to creating the best platform for HopeFront Health Hire.
           </p>
         </section>
       </div>

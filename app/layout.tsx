@@ -7,7 +7,7 @@ import { UserProvider } from "@/lib/user-context"
 const poppins = Poppins({ weight: ["400", "500", "600", "700"], subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "HealthCare Recruitment Portal",
+  title: "HopeFront Health Hire",
   description: "Connect healthcare professionals with opportunities",
     generator: 'v0.app'
 }

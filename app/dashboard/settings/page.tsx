@@ -44,7 +44,7 @@ export default function SettingsPage() {
                 <label className="block text-sm font-medium text-slate-600 mb-2">Platform Name</label>
                 <input
                   type="text"
-                  defaultValue="Healthcare Recruitment Portal"
+                  defaultValue="HopeFront Health Hire"
                   className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06C144]"
                 />
               </div>
